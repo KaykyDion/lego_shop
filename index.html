@@ -1,0 +1,620 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LEGO Shop</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Titan+One&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css">
+  <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+  <header class="navbar navbar-expand-lg sticky-top" id="header">
+    <div class="container">
+      <a href="#">
+        <img src="./images/LEGO_logo.svg.png" alt="Logo da empresa LEGO" class="navbar-brand">
+      </a>
+      <button class="navbar-toggler" data-bs-toggle="collapse" data-bs-target="#nav-menu">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <nav class="navbar-collapse collapse justify-content-end" id="nav-menu">
+        <ul class="nav nav-pills d-md-flex d-block">
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" href="#releases">
+              Lançamentos
+              <i class="bi bi-stars"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" href="#themes">
+              Temas
+              <i class="bi bi-collection-fill"></i>
+            </a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link fw-bold fs-5" href="#support">
+              Suporte
+              <i class="bi bi-info-circle"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <div data-bs-spy="scroll" data-bs-target="#header" data-bs-smooth-scroll="true">
+    <section id="releases" class="pt-3 pb-3">
+      <div class="carousel slide" data-bs-ride="carousel" id="carousel">
+        <div class="carousel-inner">
+          <div data-bs-interval="3000" class="carousel-item active">
+            <img src="./images/slides/slide1.png" alt="carousel de lançamentos">
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img src="./images/slides/slide2.png" alt="Lançamento lego Indiana Jones">
+          </div>
+          <div data-bs-interval="3000" class="carousel-item">
+            <img src="./images/slides/slide3.png" alt="Lançamento lego Indiana Jones">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carousel" data-bs-slide="prev">
+          <i class="bi bi-arrow-left-circle-fill control-icon fs-1"></i>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carousel" data-bs-slide="next">
+          <i class="bi bi-arrow-right-circle-fill control-icon fs-1"></i>
+        </button>
+      </div>
+      <div class="container pt-5 pb-5">
+        <div class="row text-center">
+          <h2><span class="section-title fs-1">Lançamentos</span></h2>
+        </div>
+        <div class="row">
+          <div class="col-lg-3 col-md-6 mt-4">
+            <div class="card">
+              <img src="./images/card-images/card-image-1.webp" alt="imagem de um carro de lego">
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Icons - Land Rover Defender 90 Clássico</h3>
+                </div>
+                <div class="card-text">
+                  <p class="fw-bold fs-4 mb-0 price">R$2.299,99</p>
+                  <p>10X de R$299,99</p>
+                </div>
+                <button class="btn fw-bold fs-5">
+                  Adicionar ao carrinho
+                  <i class="bi bi-cart-plus-fill ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4">
+            <div class="card">
+              <img src="./images/card-images/card-image-2.webp" alt="Cenário em lego do filme Senhor dos Anéis">
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Icons - O Senhor dos Anéis: Rivendell™</h3>
+                </div>
+                <div class="card-text">
+                  <p class="fw-bold fs-4 mb-0 price">R$4.799,99</p>
+                  <p>10X de R$479,99</p>
+                </div>
+                <button class="btn fw-bold fs-5">
+                  Adicionar ao carrinho
+                  <i class="bi bi-cart-plus-fill ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4">
+            <div class="card">
+              <img src="./images/card-images/card-image-3.webp" alt="Torre Eiffel em lego">
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Icons - Torre Eiffel - Clássico</h3>
+                </div>
+                <div class="card-text">
+                  <p class="fw-bold fs-4 mb-0 price">R$6.999,99</p>
+                  <p>10X de R$699,99</p>
+                </div>
+                <button class="btn fw-bold fs-5">
+                  Adicionar ao carrinho
+                  <i class="bi bi-cart-plus-fill ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4">
+            <div class="card">
+              <img src="./images/card-images/card-image-4.webp" alt="imagem de um chalé triangular em lego">
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Ideas - Chalé de Estrutura Triangular</h3>
+                </div>
+                <div class="card-text">
+                  <p class="fw-bold fs-4 mb-0 price">R$1.699,99</p>
+                  <p>10X de R$169,99</p>
+                </div>
+                <button class="btn fw-bold fs-5">
+                  Adicionar ao carrinho
+                  <i class="bi bi-cart-plus-fill ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 mt-4">
+            <div class="card">
+              <img src="./images/card-images/card-image-5.webp" alt="Túmulo perdido do filme Indiana Jones em lego">
+              <div class="card-body">
+                <div class="card-title">
+                  <h3>Indiana Jones - Fuga do Túmulo Perdido</h3>
+                </div>
+                <div class="card-text">
+                  <p class="fw-bold fs-4 mb-0 price">R$379,99</p>
+                  <p>3X de R$126,66</p>
+                </div>
+                <button class="btn fw-bold fs-5">
+                  Adicionar ao carrinho
+                  <i class="bi bi-cart-plus-fill ms-2"></i>
+                </button>
+              </div>
+            </div>
+          </div>
+          
+        </div>
+      </div>
+    </section>
+    <section id="themes">
+      <div class="container pt-5 pb-5">
+        <div class="row text-center">
+          <h2><span class="section-title fs-1">Temas</span></h2>
+        </div>
+        <div class="row mt-5 text-center">
+            <nav class="nav nav-pills nav-theme">
+              <button type="button" class="nav-theme-btn nav-link col-sm-3 btn fw-bold active" data-bs-toggle="tab" data-bs-target="#marvel">
+                MARVEL
+              </button>
+              <button type="button" class="nav-theme-btn nav-link col-sm-3 btn fw-bold" data-bs-toggle="tab" data-bs-target="#harry-potter">
+                Harry Potter
+              </button>
+              <button type="button" class="nav-theme-btn nav-link col-sm-3 btn fw-bold" data-bs-toggle="tab" data-bs-target="#batman">
+                Batman
+              </button>
+              <button type="button" class="nav-theme-btn nav-link col-sm-3 btn fw-bold" data-bs-toggle="tab" data-bs-target="#minecraft">
+                Minecraft
+              </button>
+            </nav>
+              <div class="tab-content">
+                <div class="tab-pane active" id="marvel">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/marvel/manopla-iron-man.webp" alt="Manopla de Nanotecnologia lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Marvel - Manopla de Nanotecnologia</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$699,99</p>
+                            <p>6X de 116,66</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/marvel/martelo-do-thor.webp" alt="Martelo do Thor lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Super Heroes Marvel - Martelo de Thor</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$999,99</p>
+                            <p>9X de R$111,11</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/marvel/carnificina.webp" alt="Carnificina lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Super Heroes Marvel - Carnage</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$439,99</p>
+                            <p>4X de R$109,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/marvel/venom.webp" alt="Venom lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Super Heroes Marvel - Venom</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$699,99</p>
+                            <p>6X de R$116,66</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/marvel/venom.webp" alt="Venom lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Super Heroes Marvel - Venom</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$699,99</p>
+                            <p>6X de R$116,66</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="harry-potter">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/harry-potter/hogwarts-castle.webp" alt="Castelo de hogwarts lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Harry Potter - O Castelo de Hogwarts</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$4.899,99</p>
+                            <p>10X de R$489,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/harry-potter/banner-grifinoria.webp" alt="Banner da Casa Grifinória">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Harry Potter - Banner da Casa Grifinória</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$329,99</p>
+                            <p>3X de R$109,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/harry-potter/banner-lufa-lufa.webp" alt="Banner da Casa Lufa-Lufa">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Harry Potter - Banner da Casa Lufa-Lufa</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$329,99</p>
+                            <p>3X de R$109,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/harry-potter/voldemort-chaveiro.webp" alt="Chaveiro lego do Voldemort">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Chaveiro Harry Potter - Voldemort</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$89,99</p>
+                            <p>2X de R$44,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="batman">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/batman/batmovel.webp" alt="Batmóvel lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Technic - O Batman™ – Batmóvel</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$999,99</p>
+                            <p>9X de R$111,11</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/batman/batwing.webp" alt="Batwing lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Super Heroes DC - Batman Batwing</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$1.389,99</p>
+                            <p>10X de R$138,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/batman/moto-batman.webp" alt="Moto do Batman lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Technic - Moto do Batman</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$479,99</p>
+                            <p>4X de R$119,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/batman/batman-e-superman.webp" alt="Batman e Superman lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>BrickHeadz - Batman Tático e Superman</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$899,99</p>
+                            <p>10X de R$89,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane" id="minecraft">
+                  <div class="row">
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/minecraft/caverna-minecraft.webp" alt="Caverna do Minecraft lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Minecraft - A Batalha Escura Profunda</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$619,99</p>
+                            <p>6X de R$103,33</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/minecraft/castelo-de-gelo.webp" alt="Castelo de gelo do Minecraft lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Minecraft - O Castelo de Gelo</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$499,99</p>
+                            <p>4X de R$124,99</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/minecraft/floresta-deformada.webp" alt="Floresta deformada do Minecraft lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Minecraft - A Floresta Deformada</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$224,99</p>
+                            <p>2X de R$112,49</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-4">
+                      <div class="card">
+                        <img src="./images/themes-card-images/minecraft/celeiro-minecraft.webp" alt="Celeiro do Minecraft lego">
+                        <div class="card-body">
+                          <div class="card-title">
+                            <h3>Minecraft - O Celeiro Vermelho</h3>
+                          </div>
+                          <div class="card-text">
+                            <p class="fw-bold fs-4 mb-0 price">R$999,99</p>
+                            <p>9X de R$111,11</p>
+                          </div>
+                          <button class="btn fw-bold fs-5">
+                            Adicionar ao carrinho
+                            <i class="bi bi-cart-plus-fill ms-2"></i>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+        </div>
+      </div>
+    </section>
+    <section id="support">
+      <div class="container pt-5 pb-5">
+        <div class="row text-center">
+          <h2><span class="section-title fs-1">Suporte</span></h2>
+        </div>
+        <div class="row mt-5">
+          <div class="col-md-6">
+            <form class="pe-md-5">
+              <div class="mb-3 justify-content-end">
+                <label for="name" class="form-label fw-bold fs-5">Nome:</label>
+                <input type="text" id="name" name="name" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label fw-bold fs-5">E-mail:</label>
+                <input type="email" id="email" name="email" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="telephone" class="form-label fw-bold fs-5">Telefone:</label>
+                <input type="tel" id="telephone" name="telephone" class="form-control">
+              </div>
+              <div class="mb-3">
+                <label for="message" class="form-label fw-bold fs-5">Sua mensagem:</label>
+                <textarea id="message" name="message" class="form-control"></textarea>
+              </div>
+              <button type="submit" class="btn btn-success">
+                Enviar
+              </button>
+            </form>
+          </div>
+          <div class="col-md-6">
+            <div class="accordion">
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button collapsed rounded" data-bs-toggle="collapse" data-bs-target="#accordion1">
+                    Dúvidas frequentes
+                  </button>
+                </div>
+                <div class="accordion-collapse collapse" id="accordion1">
+                  <div class="accordion-body rounded">
+                    <p>
+                      1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt, veniam illum at corporis officiis consequuntur beatae facere ad sed perspiciatis dolor enim praesentium voluptatum sequi rem laborum mollitia exercitationem.
+                    </p>
+                    <p>
+                      2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloribus omnis accusamus error voluptates vel aut laborum temporibus, repudiandae perferendis officiis veniam officia neque magni eaque quae eum consequuntur maiores.
+                    </p>
+                    <p>
+                      3. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem tempora sapiente excepturi dicta quia adipisci consequuntur veritatis reprehenderit quod unde! Incidunt earum architecto quidem dolore autem, deleniti aliquid nemo non!
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item mt-3 mb-3">
+                <div class="accordion-header">
+                  <button class="accordion-button collapsed rounded" data-bs-toggle="collapse" data-bs-target="#accordion2">
+                    Garantia
+                  </button>
+                </div>
+                <div class="accordion-collapse collapse" id="accordion2">
+                  <div class="accordion-body rounded">
+                    <p>
+                      Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti commodi ab laudantium. Dignissimos perferendis ea, commodi iure beatae recusandae? Consequuntur cum totam natus ullam accusantium ad vero maxime illum quis.
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit et pariatur ratione dolorum modi nobis dolor adipisci earum mollitia aspernatur repellat dolorem aliquam cum voluptatum deleniti nulla, sequi deserunt id.
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion-item">
+                <div class="accordion-header">
+                  <button class="accordion-button collapsed rounded" data-bs-toggle="collapse" data-bs-target="#accordion3">
+                    Entrega e transportadoras
+                  </button>
+                </div>
+                <div class="accordion-collapse collapse" id="accordion3">
+                  <div class="accordion-body rounded">
+                    <p>
+                      1. Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique deserunt, veniam illum at corporis officiis consequuntur beatae facere ad sed perspiciatis dolor enim praesentium voluptatum sequi rem laborum mollitia exercitationem.
+                    </p>
+                    <p>
+                      2. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatibus, doloribus omnis accusamus error voluptates vel aut laborum temporibus, repudiandae perferendis officiis veniam officia neque magni eaque quae eum consequuntur maiores.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="mt-5">
+    <div class="container">
+      <h4>
+        &copy; Todos os direitos reservados - LEGO Shop
+      </h4>
+    </div>
+  </footer>
+  <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+  <script src="./js/jquery.validate.min.js"></script>
+  <script src="./js/jquery.mask.min.js"></script>
+  <script src="./js/main.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
